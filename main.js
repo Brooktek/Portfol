@@ -130,7 +130,7 @@ function reveal() {
 // Download CV functionality
 document.getElementById('downloadCV').addEventListener('click', function(e) {
     e.preventDefault(); 
-    alert('Downloading CV...');
+    window.open('Brook_teklebrhan_cv .pdf', '_parent');
 });
 
 // Add interactive hover effect to skill categories
