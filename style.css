@@ -114,6 +114,23 @@ nav {
   background: linear-gradient(135deg, #2563eb11 0%, #1e40af11 100%);
 }
 
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.profile-picture {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-bottom: 2rem;
+  border: 4px solid var(--primary-color);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
 .hero-content h1 {
   font-size: 3rem;
   margin-bottom: 1rem;
@@ -200,16 +217,6 @@ nav {
   color: var(--primary-color);
 }
 
-.profile-picture {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  margin-bottom: 2rem;
-  border: 4px solid var(--primary-color);
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-
 
 /* Ongoing Projects Section */
 .ongoing-projects {
@@ -243,6 +250,23 @@ nav {
 
 .section-h2{
     text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: var(--primary-color);
+    position: relative;
+    padding-bottom: 1rem;
+}
+
+.section-h2::after{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 4px;
+  background: var(--primary-color);
+  border-radius: 2px;
 }
 
 /* Projects Section */
