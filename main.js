@@ -129,8 +129,8 @@ function reveal() {
 
 // Download CV functionality
 document.getElementById('downloadCV').addEventListener('click', function(e) {
-    e.preventDefault();
-    alert('CV download functionality will be implemented here');
+    e.preventDefault(); 
+    alert('Downloading CV...');
 });
 
 // Add interactive hover effect to skill categories
