@@ -1,3 +1,24 @@
+// Initialize Swiper
+document.addEventListener('DOMContentLoaded', () => {
+  const swiper = new Swiper('.about-swiper', {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      loop: true,
+      autoplay: {
+          delay: 5000,
+          disableOnInteraction: false,
+      },
+      pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+      },
+      navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+      },
+  });
+});
+
 // Smooth scrolling for navigation links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
@@ -115,7 +136,7 @@ document.getElementById('downloadCV').addEventListener('click', function(e) {
 // Add interactive hover effect to skill categories
 document.querySelectorAll('.skill-category').forEach(category => {
     category.addEventListener('mouseenter', function() {
-        this.style.transform = 'scale(1.08)';
+        this.style.transform = 'scale(1.07)';
     });
     
     category.addEventListener('mouseleave', function() {
@@ -161,7 +182,7 @@ class RocketLine {
                 speedX: (Math.random() - 0.5) * 2,
                 speedY: (Math.random() - 0.5) * 2,
                 opacity: 1,
-                color: 'rgb(8, 145, 8)' // Rocket flame-like color (red-orange)
+                color: '#1e40af' // Rocket flame-like color (red-orange)
             };
             this.particles.push(particle);
         }
@@ -212,6 +233,7 @@ class RocketLine {
         const rocketLine = new RocketLine();
     });
 
+
 // Animate project progress bars
 function animateProjectProgress() {
     const progressBars = document.querySelectorAll('.project-progress-bar');
@@ -220,6 +242,7 @@ function animateProjectProgress() {
         bar.style.width = `${progress}%`;
     });
 }
+
 
 // Initialize animations
 document.addEventListener('DOMContentLoaded', () => {

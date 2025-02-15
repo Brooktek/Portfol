@@ -29,18 +29,6 @@ body {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-#dynamic-line {
-position: fixed;
-top: 0;
-left: 0;
-height: 2px;
-width: 0;
-background-color: #000;
-z-index: 1000;
-transition: width 0.3s ease, transform 0.3s ease;
-}
-
-
 .rocket-line {
       position: fixed;
       top: 0;
@@ -212,6 +200,16 @@ nav {
   color: var(--primary-color);
 }
 
+.profile-picture {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-bottom: 2rem;
+  border: 4px solid var(--primary-color);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
 
 /* Ongoing Projects Section */
 .ongoing-projects {
@@ -253,6 +251,11 @@ nav {
   background-color: var(--background-color);
 }
 
+.project-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
 
 .projects-grid {
   display: grid;
