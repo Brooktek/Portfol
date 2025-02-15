@@ -182,7 +182,7 @@ class RocketLine {
                 speedX: (Math.random() - 0.5) * 2,
                 speedY: (Math.random() - 0.5) * 2,
                 opacity: 1,
-                color: '#1e40af' // Rocket flame-like color (red-orange)
+                color: '#1e40af' 
             };
             this.particles.push(particle);
         }

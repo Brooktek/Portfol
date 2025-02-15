@@ -296,7 +296,7 @@ nav {
 }
 
 .project-card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-30px);
 }
 
 .project-content {
@@ -322,6 +322,9 @@ nav {
   padding: 5rem 2rem;
   max-width: 1200px;
   margin: 0 auto;
+}
+.achievement-card:hover {
+  transform: translateY(-7px);
 }
 
 .achievements-grid {
@@ -390,7 +393,7 @@ textarea {
 }
 
 .social-icon:hover {
-  transform: translateY(-2px);
+  transform: translateY(-15px);
 }
 
 /* Footer */
