@@ -299,6 +299,10 @@ nav {
   transform: translateY(-5px);
 }
 
+.project-content {
+  padding: 0.5rem;
+}
+
 .tags {
   display: flex;
   flex-wrap: wrap;
